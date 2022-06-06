@@ -21,7 +21,7 @@ function init() {
     // カメラを作成
     // new THREE.PerspectiveCamera(視野角, アスペクト比, near, far)
     camera = new THREE.PerspectiveCamera(45, width / height, 1, 10000);
-    camera.position.set(0, 0, -500);
+    camera.position.set(0, -500, -500);
     //camera.lookAt(url.position); 
     //※OrbitControls.jsを使用中はlookAt関数が使えなくなります。https://qiita.com/nogson/items/e5e4a5a09f7d594eabf8
 
@@ -40,7 +40,7 @@ function init() {
         function (gltf) {
             model = gltf.scene;
             model.scale.set(100.0, 100.0, 100.0);
-            model.rotation.y = 180;
+            model.rotation.y = 220;
             model.position.set(0, (w_height / 3 * -1), 0);
             scene.add(gltf.scene);
         },
