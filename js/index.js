@@ -40,7 +40,7 @@ function init() {
         function (gltf) {
             model = gltf.scene;
             model.scale.set(100.0, 100.0, 100.0);
-            model.rotation.y = -245;
+            model.rotation.y = -65;
             model.position.set(0, -250 , -250);
             scene.add(gltf.scene);
         },
